@@ -44,7 +44,7 @@ python3 -m app.main list --help
 
 In project's root dir, run:
 ```bash
-pytest
+python3 -m unittest
 ```
 
 ## Decisions Breakdown
@@ -54,3 +54,4 @@ pytest
 - Dependency Injection: inside the `ApplicationContainer` you will find a basic dependency injection setup. The main goals were to attend to SOLID's DIP principle and also ease the testing process by allowing mocks to be injected in the desired classes
 - Router: you will notice that the `Router` file is the only one using a procedural approach. It had to be this way due to limitations with `Typer`
 - Tests: as mentioned, due to the time constraint, I left some "unhappy" paths untested (especially if any call to the GoogleClient fails)
+- CI: I added a simple Github Actions script to validate the tests before the merge to the main branch
