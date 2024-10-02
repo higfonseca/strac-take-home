@@ -1,6 +1,8 @@
 # Strac Take-Home Test
 This is a CLI application to deal with Google Drive files (list, download, upload, delete).
 
+[![codecov](https://codecov.io/gh/higfonseca/strac-take-home/graph/badge.svg?token=JBXSU3XUG4)](https://codecov.io/gh/higfonseca/strac-take-home)
+
 ## Requirements
 
 - Python >= 3.10
