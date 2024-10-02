@@ -27,10 +27,10 @@ jobs:
       - name: Run tests
         run: |
           source .venv/bin/activate
-          pytest
+          pytest --cov --cov-report=xml
 
-#      - name: Upload coverage reports to Codecov
-#        uses: codecov/codecov-action@v4.0.1
-#        with:
-#          token: ${{ secrets.CODECOV_TOKEN }}
-#          slug: higfonseca/fiap-challenge-order
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: higfonseca/strac-take-home
