@@ -5,7 +5,7 @@ This is a CLI application to deal with Google Drive files (list, download, uploa
 
 ## Requirements
 
-- Python >= 3.10
+- Python >= 3.10.12
 - [pip](https://pypi.org/project/pip/)
 
 ## Installation
@@ -23,6 +23,7 @@ pip install -r requirements.txt
 ## Instructions
 To run the application, type the following command in your terminal:
 ```bash
+source .venv/bin/activate
 python3 -m app.main --help
 ```
 
